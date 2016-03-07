@@ -1,7 +1,7 @@
 'use strict'
 
 const Datastore = require('nedb')
-const db = new Datastore({filename: 'database', autoload: true})
+const db = new Datastore({filename: './databases/pessoa', autoload: true})
 
 const Index = (function(){
 
