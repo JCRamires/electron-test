@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Hello World!</title>
+        <link rel="stylesheet" type="text/css" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="jumbotron">
+                <h1>Hello World!</h1>
+                We are using node <script>document.write(process.versions.node)</script>,
+                Chromium <script>document.write(process.versions.chrome)</script>,
+                and Electron <script>document.write(process.versions.electron)</script>.
+            </div>
+
+            <form id="pessoa-form">
+              <div class="row">
+                  <div class="col-md-4">
+                      <fieldset class="form-group">
+                          <label for="nome">Nome</label>
+                          <input type="text" class="form-control" id="nome" name="nome" placeholder="Nome">
+                      </fieldset>
+                  </div>
+                  <div class="col-md-4">
+                      <fieldset class="form-group">
+                          <label for="sobrenome">Sobrenome</label>
+                          <input type="text" class="form-control" id="sobrenome" name="sobrenome" placeholder="Sobrenome">
+                      </fieldset>
+                  </div>
+                  <div class="col-md-4">
+                      <fieldset class="form-group">
+                          <label for="idade">Idade</label>
+                          <input type="number" class="form-control" id="idade" name="idade" placeholder="Idade">
+                      </fieldset>
+                  </div>
+              </div>
+
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+
+        </div>
+
+        <script>window.$ = window.jQuery = require('./node_modules/jquery/dist/jquery.min.js');</script>
+        <script src="js/tether.min.js"></script>
+        <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script src="js/index.js"></script>
+        <script>
+            Index.init()
+        </script>
+    </body>
+</html>
