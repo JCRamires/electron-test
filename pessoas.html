@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+      <head>
+        <meta charset="UTF-8">
+        <title>Pessoas</title>
+        <link rel="stylesheet" type="text/css" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    </head>
+    <body>
+        <div class="container">
+            <a href="index.html">Index</a>
+            <div id="pessoas-table"></div>
+        </div>
+
+        <script>window.$ = window.jQuery = require('./node_modules/jquery/dist/jquery.min.js');</script>
+        <script src="js/tether.min.js"></script>
+        <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script src="js/pessoas.js"></script>
+        <script>
+            Pessoas.init()
+        </script>
+    </body>
+</html>

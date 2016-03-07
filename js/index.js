@@ -1,7 +1,8 @@
 'use strict'
 
 const Datastore = require('nedb')
-const db = new Datastore({filename: './databases/pessoa', autoload: true})
+const db = {}
+db.pessoas = new Datastore({filename: './databases/pessoas', autoload: true})
 
 const Index = (function(){
 
@@ -27,7 +28,7 @@ const Index = (function(){
     }
 
     function addPessoa(pessoa){
-        db.insert(pessoa)
+        db.pessoas.insert(pessoa)
     }
 
     return {
