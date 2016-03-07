@@ -3,6 +3,12 @@
 const Datastore = require('nedb')
 const db = {}
 db.pessoas = new Datastore({filename: './databases/pessoas', autoload: true})
+db.pessoas.ensureIndex({ fieldName: 'nome' }, function (err) {
+  // If there was an error, err is not null
+});
+db.pessoas.ensureIndex({ fieldName: 'sobrenome' }, function (err) {
+  // If there was an error, err is not null
+});
 
 const Index = (function(){
 

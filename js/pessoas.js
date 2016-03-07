@@ -41,8 +41,6 @@ const Pessoas = (function(){
         $table.append($tableBody)
 
         $pessoasTable.append($table)
-
-
     }
 
     return {
